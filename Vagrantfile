@@ -5,7 +5,7 @@
 end
 
 Vagrant.configure('2') do |config|
-  config.vm.box = "ubuntu/trusty64" # Ubuntu 14.04
+  config.vm.box = "ubuntu/xenial64" # Ubuntu 16.04
   config.vm.network "private_network", ip: "192.168.50.4"
 
   # fix issues with slow dns https://www.virtualbox.org/ticket/13002
