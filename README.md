@@ -26,6 +26,8 @@ First, bring the vagrant box up, with userspace tools (bcc) and custom kernel.
 ```
 git clone https://github.com/iovisor/xdp-vagrant
 cd xdp-vagrant
+vagrant plugin install vagrant-reload
+vagrant plugin install vagrant-vbguest
 vagrant up
 # note that some apt errors above are expected
 vagrant ssh
